@@ -6,6 +6,9 @@ print(len(friends))
 
 
 
+
+
+
 friends_set = set(friends)
 print(friends_set)
 print(len(friends_set))
