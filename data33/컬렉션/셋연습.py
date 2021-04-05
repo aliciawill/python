@@ -2,13 +2,7 @@ friends = ['영수', '철수', '철수', '영진', '영수', '길동']
 print(friends)
 print(len(friends))
 
-
-
-
-
-
-
-
+#####git commit ###############
 friends_set = set(friends)
 print(friends_set)
 print(len(friends_set))
