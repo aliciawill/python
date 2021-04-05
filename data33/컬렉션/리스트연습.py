@@ -1,6 +1,8 @@
 food = ['감자', '양파', '고구마']
 food[2] = '국수'
 
+food.remove('감자')
+del food[0]
 print(food)
 print('리스트의 개수', len(food))
 print('요소, element의 글자수', len(food[0]))
