@@ -1,5 +1,6 @@
 try:
     me_file = open("me.txt", "r", encoding='utf-8')
+    print(me_file.readline())
     lines = me_file.readlines()
     print('읽어온 내용', lines)
     print(type(lines))
