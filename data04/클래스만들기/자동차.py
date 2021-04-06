@@ -1,4 +1,4 @@
-class Car:
+class Car():
     #클래스: 멤버변수(인스턴스변수)+멤버함수
     speed = None
     color = None
