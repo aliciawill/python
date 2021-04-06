@@ -12,7 +12,6 @@ if __name__ == '__main__':
     car1 = Car() #객체 생성
     car1.color = '빨강'
     car1.speed = 100
-
     print(car1.color)
     print(car1.speed)
     car1.run()
