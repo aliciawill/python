@@ -8,7 +8,12 @@ def set_p(x): #x는 set 컬렉션
 
 def dic_p(x):
     for data in x.values():
-        print(data)
+        print('값', data)
+    print('--------------------')
+    print(x) #딕셔너리 전체 print
+    for key in x:
+        print('키', key, ':' , '값', x[key] )
+
 
 def tuple_p(x):
     for data in x:
