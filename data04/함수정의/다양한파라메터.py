@@ -7,7 +7,7 @@ def set_p(x): #x는 set 컬렉션
         print(data)
 
 def dic_p(x):
-    for data in x:
+    for data in x.values():
         print(data)
 
 def tuple_p(x):
