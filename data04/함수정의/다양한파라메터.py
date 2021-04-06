@@ -1,11 +1,15 @@
 def list_p(x):
-    pass
+    for index in range(len(x)):
+        print(index, x[index])
 
-def set_p(x):
-    pass
+def set_p(x): #x는 set 컬렉션
+    for data in x:
+        print(data)
 
 def dic_p(x):
-    pass
+    for data in x:
+        print(data)
 
 def tuple_p(x):
-    pass
+    for data in x:
+        print(data)
