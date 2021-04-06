@@ -9,3 +9,6 @@ def mul(x, y):
 
 def div(x, y):
     return x / y
+
+if __name__ == '__main__':
+    print('더한 결과>> ', add(1000, 200))
