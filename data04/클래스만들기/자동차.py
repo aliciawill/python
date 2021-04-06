@@ -8,10 +8,14 @@ class Car:
     def start(self):
         print(self.speed, '속도로 출발하다.')
 
+    def __str__(self):
+        return str(self.speed) + ', ' + self.color
+
 if __name__ == '__main__':
     car1 = Car() #객체 생성
     car1.color = '빨강'
     car1.speed = 100
+    print(car1)
     print(car1.color)
     print(car1.speed)
     car1.run()
