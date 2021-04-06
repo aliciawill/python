@@ -2,9 +2,12 @@ class Car():
     #클래스: 멤버변수(인스턴스변수)+멤버함수
     speed = None
     color = None
-
+    count = 0 #static변수
+    
     def run(self):
         print(self.color,  '색이 달리다.')
+        Car.count += 1
+
     def start(self):
         print(self.speed, '속도로 출발하다.')
 
