@@ -13,3 +13,5 @@ set_p(bag_collect)
 
 level_collect = {"학생": "부민", "교사": "정원"}
 dic_p(level_collect)
+print(level_collect.values())
+print(type(level_collect.values()))
