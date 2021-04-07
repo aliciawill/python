@@ -6,7 +6,7 @@ class Person:
         print('먹다')
 
     def __str__(self):
-        return self.name + ' ' + self.age
+        return self.name + ' ' + str(self.age)
 
 class Man(Person):
     speed = 0
@@ -15,7 +15,7 @@ class Man(Person):
         print('빨리 달리다')
 
     def __str__(self):
-        return self.name + ' ' + self.age + ' ' + self.speed
+        return self.name + ' ' + str(self.age) + ' ' + str(self.speed)
 
 class SuperMan(Man):
     fly = False
@@ -25,9 +25,9 @@ class SuperMan(Man):
 
     def __str__(self):
         return self.name + ' ' + \
-               self.age + ' ' + \
-               self.speed + ' ' + \
-               self.fly
+               str(self.age) + ' ' + \
+               str(self.speed) + ' ' + \
+               str(self.fly)
 
 
 
