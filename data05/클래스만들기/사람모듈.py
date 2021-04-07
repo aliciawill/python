@@ -2,6 +2,9 @@ class Person:
     name = None
     age = 0
 
+    def __init__(self):
+        pass
+
     def eat(self):
         print('먹다')
 
