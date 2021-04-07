@@ -6,6 +6,7 @@ import 클래스만들기.매일 as my
 class WomanDay(Person, my.Day):
     def __init__(self, doing, time, location):
         my.Day.__init__(self, doing, time, location)
+        #단일 상속인 경우 super.__init(self, 파라메터값 나열)
 
     def free(self):
         print('쉬다.!')
