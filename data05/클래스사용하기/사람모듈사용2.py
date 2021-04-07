@@ -11,7 +11,11 @@ class WomanDay(Person, my.Day):
     def free(self):
         print('쉬다.!')
 
+    def __str__(self):
+        return self.doing + ', ' + str(self.time) + ', ' + self.location
+
 if __name__ == '__main__':
     woman_day1 = WomanDay('진짜 놀기', 20, '마포구')
     woman_day1.free()
     woman_day1.eat()
+    print(woman_day1)
