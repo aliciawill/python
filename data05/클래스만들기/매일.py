@@ -1,12 +1,16 @@
 class Day:
+    # 실제값 변수: 인스턴스 변수(동적변수)<->정적변수(static)
     doing = None
     time = 0
     location = None
+    count = 0
 
     def __init__(self, doing, time, location):
         self.doing = doing
         self.time = time
         self.location = location
+        Day.count += 1
+        print(str(Day.count) + '개 객체가 생성됨.')
 
     def study(self):
         return self.doing + '를 ' + str(self.time) + '시간 하다.'
