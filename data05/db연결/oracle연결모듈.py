@@ -1,7 +1,7 @@
-import pymysql #alt+Enter
+import cx_Oracle
 
 def create(id, pw, name, tel):
-    con = pymysql.connect(host = 'localhost', port= 3306, db='shop', user='root', password='1234')
+    con = cx_Oracle.connect('root', '1234', 'localhost:port/xe')
     print(con.get_host_info())
 
     cur = con.cursor()
