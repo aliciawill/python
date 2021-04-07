@@ -1,6 +1,7 @@
 import pymysql
 
-con = pymysql.connect(host='localhost', user='root', password='1234', port = 3306, db = 'shop')
+con = pymysql.connect(host='localhost', user='root', password='1234',
+                      port = 3306, db = 'shop')
 print(con)
 
 curs = con.cursor()

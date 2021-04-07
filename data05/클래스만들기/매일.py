@@ -5,7 +5,7 @@ class Day:
     location = None
     count = 0
 
-    def __init__(self, doing, time, location):
+    def __init__(self, , time, location):
         self.doing = doing
         self.time = time
         self.location = location
