@@ -6,7 +6,6 @@ class Dog:
     color = None
     field = ''
 
-
     # 생성자 함수(객체생성시 자동호출되는 함수, 초기화를 담당)
     # constructor!!
     def __init__(self, color, field):
