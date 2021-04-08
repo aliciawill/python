@@ -37,6 +37,7 @@ def all():
     cur.execute(sql)
 
     # row = cur.fetchone()
+
     rows = cur.fetchall() # 조건에 맞는 목록을 모두 가지고 온다.
     # cur.fetchmany(개수) : 조건에 맞는 목록을 개수만큼 가지고 온다.
     #print(rows)
