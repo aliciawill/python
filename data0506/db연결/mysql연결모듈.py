@@ -59,7 +59,7 @@ def read():
     # cur.fetchmany(개수) : 조건에 맞는 목록을 개수만큼 가지고 온다.
     print(row)
     print(type(row))
-    # print(row['id'])
+    print(row[0])
 
     con.close()
 
@@ -77,8 +77,8 @@ def read2(id):
     # cur.fetchall() : 조건에 맞는 목록을 모두 가지고 온다.
     # cur.fetchmany(개수) : 조건에 맞는 목록을 개수만큼 가지고 온다.
     print(row)
-    # print(type(row))
-    # print(row['id'])
+    print(type(row))
+    print(row[0])
 
     con.close()
 
