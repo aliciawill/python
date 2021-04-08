@@ -16,6 +16,20 @@ def create(id, pw, name, tel):
     con.commit()
     con.close()
 
+def create2(data):
+    con = pymysql.connect(host = 'localhost', port= 3306, db='shop', user='root', password='1234')
+    print(con.get_host_info())
+
+    cur = con.cursor()
+    print(cur)
+
+    sql = 'insert into member values (%s, %s, %s, %s)'
+    result = cur.execute(sql, data)
+    print('처리 결과', result, '개')
+
+    con.commit()
+    con.close()
+
 def read():
     pass
 
@@ -29,8 +43,9 @@ def update(id, tel):
     print(cur)
 
     #3. sql문을 만들어서 전송함.
+    data = (tel, id)
     sql = "update member set tel = %s where id = %s"
-    cur.execute(sql, (tel, id)) #tuple로 넣어주어야 한다.
+    cur.execute(sql, data) #tuple로 넣어주어야 한다.
 
     #4. auto-commit이 안된다. 수동으로 반영시켜야 한다.
     con.commit()
