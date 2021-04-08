@@ -90,7 +90,7 @@ def read3():
     con = pymysql.connect(host='localhost', port=3306, db='shop', user='root', password='1234')
     print(con.get_host_info())
 
-    cur = con.cursor()
+    cur = con.cursor(pymysql.cursors.DictCursor)
     print(cur)
 
     sql = "select * from member"
@@ -101,7 +101,9 @@ def read3():
     # cur.fetchmany(개수) : 조건에 맞는 목록을 개수만큼 가지고 온다.
     print(rows)
     print(type(rows))
-    print(rows[0])
+    # print(rows[0])
+    for row in rows:
+        print(row)
 
     con.close()
 
