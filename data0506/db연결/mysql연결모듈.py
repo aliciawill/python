@@ -16,6 +16,8 @@ def create(id, pw, name, tel):
     con.commit()
     con.close()
 
+
+
 def create2(data):
     con = pymysql.connect(host = 'localhost', port= 3306, db='shop', user='root', password='1234')
     print(con.get_host_info())
@@ -29,6 +31,8 @@ def create2(data):
 
     con.commit()
     con.close()
+
+
 
 def create3(datas):
     con = pymysql.connect(host = 'localhost', port= 3306, db='shop', user='root', password='1234')
@@ -70,8 +74,8 @@ def read2(id):
     cur = con.cursor()
     print(cur)
 
-    sql = "select * from member where id = 'apple'"
-    cur.execute(sql)
+    sql = "select * from member where id = %s"
+    cur.execute(sql, id)
 
     row = cur.fetchone()
     # cur.fetchall() : 조건에 맞는 목록을 모두 가지고 온다.
