@@ -45,7 +45,42 @@ def create3(datas):
     con.close()
 
 def read():
-    pass
+    con = pymysql.connect(host='localhost', port=3306, db='shop', user='root', password='1234')
+    print(con.get_host_info())
+
+    cur = con.cursor()
+    print(cur)
+
+    sql = "select * from member where id = 'apple'"
+    cur.execute(sql)
+
+    row = cur.fetchone()
+    # cur.fetchall() : 조건에 맞는 목록을 모두 가지고 온다.
+    # cur.fetchmany(개수) : 조건에 맞는 목록을 개수만큼 가지고 온다.
+    print(row)
+    print(type(row))
+    # print(row['id'])
+
+    con.close()
+
+def read2(id):
+    con = pymysql.connect(host='localhost', port=3306, db='shop', user='root', password='1234')
+    print(con.get_host_info())
+
+    cur = con.cursor()
+    print(cur)
+
+    sql = "select * from member where id = 'apple'"
+    cur.execute(sql)
+
+    row = cur.fetchone()
+    # cur.fetchall() : 조건에 맞는 목록을 모두 가지고 온다.
+    # cur.fetchmany(개수) : 조건에 맞는 목록을 개수만큼 가지고 온다.
+    print(row)
+    # print(type(row))
+    # print(row['id'])
+
+    con.close()
 
 def update(id, tel):
     #1. mysql과 연결
