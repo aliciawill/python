@@ -13,7 +13,6 @@ content = BeautifulSoup(result.content, "html.parser")
 
 dt_list = content.findAll("dt", {"class": "tit"})
 # dt_list
-
 print(dt_list[0])
 #
 # dt_list[0].find("a").text
