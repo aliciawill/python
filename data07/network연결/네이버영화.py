@@ -8,9 +8,7 @@ result = requests.get(url)
 # result
 
 content = BeautifulSoup(result.content, "html.parser")
-
 # content
-
 dt_list = content.findAll("dt", {"class": "tit"})
 # dt_list : ResultSet class의 객체, LIST의 상속!
 # 인덱싱과 슬라이싱이 된다. 
