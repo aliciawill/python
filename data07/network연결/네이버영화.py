@@ -38,6 +38,15 @@ for item in test_list:
 
 for index in range(0, len(test_list)): #0~2
     print(test_list[index])
+
+print('--------------------')
+
+for tag in num_list:
+    print(tag.text)
+
+for index in range(0, len(num_list), 2): #0~2
+    print(index, ':' ,num_list[index].text)
+
 #
 # dt_list[0].find("a").text
 #
