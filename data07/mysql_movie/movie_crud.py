@@ -16,3 +16,4 @@ def create(datas):
 
     con.commit()
     con.close()
+
