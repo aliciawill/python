@@ -72,7 +72,7 @@ print(jumsu_list2)
 
 import mysql_movie.movie_crud as db
 # db.create(jumsu_list2)
-db.create(title_list2)
+# db.create(title_list2)
 
 
 
