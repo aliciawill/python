@@ -75,7 +75,7 @@ import mysql_movie.movie_crud as db
 # db.create(title_list2)
 
 jumsu_list3 = list(jumsu_list2)
-total = list(zip(jumsu_list3, title_list))
+total = list(zip(title_list2, jumsu_list2))
 print(total)
 
 #
