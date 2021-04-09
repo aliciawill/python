@@ -8,9 +8,9 @@ def create(datas):
     print(cur)
 
 
-    sql = 'insert into movie(title) values (%s)'
+    # sql = 'insert into movie(title) values (%s)'
     # sql = 'insert into movie(jumsu) values (%s)'
-    # sql = 'insert into movie(title, jumsu) values (%s, %s)'
+    sql = 'insert into movie(title, jumsu) values (%s, %s)'
     result = cur.executemany(sql, datas)
     print('처리 결과', result, '개')
 
