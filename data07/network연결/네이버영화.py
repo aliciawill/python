@@ -47,6 +47,37 @@ for tag in num_list:
 for index in range(0, len(num_list), 2): #0~2
     print(index, ':' ,num_list[index].text)
 
+print('--------------------')
+
+title_list = []
+for tag in dt_list:
+    print(tag.find('a').text)
+    data = tag.find('a').text
+    title_list.append(data)
+print(len(title_list))
+print(title_list)
+
+jumsu_list = []
+for index in range(0, 145):
+    data = num_list[index].text
+    jumsu_list.append(data)
+print(len(jumsu_list))
+print(jumsu_list)
+
+title_list2 = tuple(title_list)
+print(title_list2)
+
+jumsu_list2 = tuple(jumsu_list)
+print(jumsu_list2)
+
+import mysql_movie.movie_crud as db
+db.create(jumsu_list2)
+
+
+
+
+
+
 #
 # dt_list[0].find("a").text
 #
