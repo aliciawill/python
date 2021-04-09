@@ -12,8 +12,20 @@ content = BeautifulSoup(result.content, "html.parser")
 # content
 
 dt_list = content.findAll("dt", {"class": "tit"})
-# dt_list
+# dt_list : ResultSet class의 객체, LIST의 상속!
+# 인덱싱과 슬라이싱이 된다. 
+print(type(dt_list)) #ResultSet클래스의 객체
+print(dt_list) #전체 목록 프린트
+print('리스트의 개수 >', len(dt_list)) #리스트의 개수
 print(dt_list[0])
+tag = dt_list[0].find("a")
+print(tag)
+print(type(tag))
+print(tag.text)
+
+num_list = content.findAll("span", {"class": "num"})
+print(num_list)
+
 #
 # dt_list[0].find("a").text
 #
