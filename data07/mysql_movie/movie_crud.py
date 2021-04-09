@@ -7,6 +7,7 @@ def create(datas):
     cur = con.cursor()
     print(cur)
 
+
     # sql = 'insert into movie(title) values (%s)'
     sql = 'insert into movie(jumsu) values (%s)'
     # sql = 'insert into movie(title, jumsu) values (%s, %s)'
