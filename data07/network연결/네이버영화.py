@@ -30,7 +30,14 @@ print(num_list[0])
 tag2 = num_list[0]
 print(type(tag2))
 print(tag2.text)
+print('---------------------')
 
+test_list = [1,2,3]
+for item in test_list:
+    print(item)
+
+for index in range(0, len(test_list)): #0~2
+    print(test_list[index])
 #
 # dt_list[0].find("a").text
 #
