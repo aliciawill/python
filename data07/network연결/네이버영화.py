@@ -25,6 +25,12 @@ print(tag.text)
 
 num_list = content.findAll("span", {"class": "num"})
 print(num_list)
+print('리스트의 개수2 >', len(num_list)) #리스트의 개수
+print(num_list[0])
+tag2 = num_list[0]
+print(tag2)
+print(type(tag2))
+print(tag2.text)
 
 #
 # dt_list[0].find("a").text
