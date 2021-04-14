@@ -80,7 +80,7 @@ print(type(total))
 total2 = tuple(total)
 print(total2)
 print('-----------------------')
-db.create(total2)
+db.create(total)
 
 #
 # dt_list[0].find("a").text
